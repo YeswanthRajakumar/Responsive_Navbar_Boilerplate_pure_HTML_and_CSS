@@ -1,0 +1,120 @@
+/* Global Styles */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Nav Styling */
+
+
+.container{
+    padding : 2% 2%;
+    background-color: rgba(87, 207, 255, 0.829)
+}
+
+.logo{
+    height: 50px;
+    width: 180px;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;
+    /* background-color: teal; */
+    flex-wrap: wrap;
+   
+}
+
+.nav-ul{
+    display: flex;
+    list-style: none;
+    /* background-color: tomato; */
+justify-content: center; 
+    font-family: sans-serif;
+}
+
+.nav-ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 20px;
+    display: inline-block;
+    font-size: 1.3rem;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.hamburger{
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    width:40px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    
+    display: none;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+/* Navbar media Qyeries */
+
+@media screen and (max-width:767px){
+    
+    .nav-ul{
+        display: none;
+        width: 100%  ;
+        flex-direction: column;
+        transition: 2s;
+        text-align: center;
+    }
+    .nav-ul.show{
+        display: flex;
+    }
+
+    .hamburger{
+        display: block;
+    }
+   
+    .logo{
+        width: 100%;
+        margin-left: -15%;
+    }
+
+    .nav-ul li a{
+        padding: 15px;
+    }
+    .btn--outline{
+        margin-top: 2%;
+    }
+}
+
+
+@media screen and (max-width:378px){
+    .logo{
+        width: 50%;
+    }
+    .hamburger{
+        width: 12%;
+    }
+}
+
+.btn--primary{
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    
+}
+
+.btn--outline{
+    margin-left: 2%;
+    border-radius: 5px;
+    border: 1px solid cornflowerblue;
+    
+}

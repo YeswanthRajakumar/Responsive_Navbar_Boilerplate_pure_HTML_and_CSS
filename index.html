@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fontawesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img class='logo'src="logo.svg" alt="logo">
+            <button class="hamburger" id="hamburger">
+                <img src="icons/menu.svg" alt="">
+            </button>       
+            <ul class="nav-ul" id="nav-ul">
+                <li class=""><a href="">Home</a></li>
+                <li class=""><a href="">Services</a></li>
+                <li class=""><a href="">About</a></li>
+                <li class="menu-item btn--primary"><a href="">Signup</a></li>
+                <li class="menu-item btn--outline"><a href="">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navUL = document.getElementById('nav-ul')
+
+        hamburger.addEventListener('click',()=>{
+            navUL.classList.toggle('show');
+        })
+
+    </script>
+</body>
+</html>
